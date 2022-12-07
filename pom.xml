@@ -11,6 +11,84 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <jme3-version>3.5.2-stable</jme3-version>
     </properties>
+    <dependencies>
+        <!--任何jME3项目都需要的核心库-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-core</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--各种滤镜、粒子、水面等特效。 -->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-effects</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--jME3的网络模块(别名SpiderMonkey)。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-networking</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--加载orge、fbx等模型文件的插件。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-plugins</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--加载orge、fbx等模型文件的插件。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-jogg</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--地形生成API，可使用高度图来生成3D地形-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-terrain</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <!--        加载blender模型文件，仅适用于桌面开发，手机显卡不支持。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-blender</artifactId>
+            <version>3.3.2-stable</version>
+        </dependency>
+        <!--加载blender模型文件，仅适用于桌面开发，手机显卡不支持。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-bullet</artifactId>
+            <version>3.3.2-stable</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-bullet-native</artifactId>
+            <version>3.3.2-stable</version>
+        </dependency>
+        <!--BulletPhysics所需的静态库文件（dll、so），仅适用于Android开发。-->
+<!--        <dependency>-->
+<!--            <groupId>org.jmonkeyengine</groupId>-->
+<!--            <artifactId>jme3-bullet-native-android</artifactId>-->
+<!--            <version>3.3.2-stable</version>-->
+<!--        </dependency>-->
+        <!-- jME3桌面应用开发所需的核心API。-->
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-desktop</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-desktop</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.jmonkeyengine</groupId>
+            <artifactId>jme3-lwjgl3</artifactId>
+            <version>${jme3-version}</version>
+        </dependency>
+    </dependencies>
 </project>
